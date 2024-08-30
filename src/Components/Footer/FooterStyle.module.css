@@ -1,0 +1,53 @@
+.footer{
+    background-color: #000;
+    color: #FAFAFA;
+}
+.footer h3{
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 34px;
+    letter-spacing: 3%;
+}
+.footer h4{
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 38px;
+}
+.footer ul li{
+    font-size: 16px;
+    padding-bottom: 8px;
+}
+.footerSendEmail{
+    color: #ccc;
+    position: relative;
+    border: 1.5px solid #ccc !important;
+    border-radius: 4px;
+}
+.footer input{
+    background-color: transparent;
+    border: none !important;
+    padding: 12px 0 12px 6px;
+    margin-top: 12px;
+    margin: 0;
+}
+.footer input:focus-within{
+    border: none !important;
+}
+.footerSendEmail i{
+    position: absolute;
+    top: 50%;
+    right: 12px;
+    transform: translateY(-50%);
+    padding-top: 12px;
+}
+.footer .footerIconsList{
+    display: flex;
+}
+.footer .footerIconsList li{
+    padding-right: 15px;
+    transition: all 0.5s;
+}
+.footer .footerIconsList li:hover{
+    text-shadow: 1px 1px 6px #ccc;
+    transform: scale(1.1, 1.1);
+}

@@ -1,0 +1,128 @@
+.homeTitle h6{
+    color: var(--main-color);
+    position: relative;
+    padding: 8px 0;
+    padding-left: 30px;
+}
+.homeTitle h6::before{
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    width: 20px;
+    height: 100%;
+    background-color: var(--main-color);
+    border-radius: 2px;
+}
+.counter{
+    color: var(--main-color);
+}
+
+/* products */
+.productContainer{
+    padding: 20px;
+    padding-left: 0;
+}
+.homeTitle h6{
+    font-weight: 600;
+}
+.homeTitle p{
+    font-size: 36px;
+    font-weight: 600;
+    line-height: 48px;
+    letter-spacing: 0.04em;
+    padding-top: 5px;
+    padding-bottom: 20px;
+}
+.productContainer .productImg{
+    position: relative;
+}
+/* .productContainer .productImg img{
+    width: 200px;
+    height: 100%;
+    background-color: #fff !important;
+} */
+.productContainer .productImg .addToCart{
+    display: block;
+    width: 100%;
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+    position: absolute;
+    bottom: -30px;
+    left: 50%;
+    transform: translateX(-50%);
+    margin: auto;
+    padding: 8px 22px;
+    text-align: center;
+    border-radius: 2px;
+    opacity: 0;
+    transition: all 1.2s;
+}
+.productContainer .productImg:hover .addToCart{
+    bottom: 0;
+    opacity: 1;
+}
+.productContainer .productImg i{
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    color: var(--secondary-color);
+    cursor: pointer;
+}
+.productContainer .productImg .eyeIcon{
+    padding-top: 22px;
+    top: 22px;
+}
+.productContainer .productImg .discount{
+    position: absolute;
+    top: 0;
+    left: 0;
+    font-size: 14px;
+    padding: 4px 8px;
+    color: var(--primary-color);
+    background-color: var(--main-color);
+}
+.productContainer .productText h6{
+    font-weight: 600;
+}
+.productContainer .productText p{
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+    color: var(--main-color);
+}
+
+/* category section */
+.categoryContainer .categoryElement{
+    color: var(--secondary-color);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #0000004D;
+    border-radius: 4px;
+    padding: 20px 0px;
+    cursor: pointer;
+    overflow: hidden;
+    transition: all 1s;
+}
+.categoryContainer .categoryElement:last-child{
+    margin-right: 0;
+}
+.categoryContainer .categoryElement:hover{
+    background-color: var(--main-color);
+    color: var(--primary-color);
+    transform: scale(1.1, 1.1);
+}
+.categoryContainer .categoryElement i{
+    font-size: 44px;
+}
+.categoryContainer .categoryElement p{
+    font-size: 16px;
+    font-weight: 600;
+    padding-top: 20px;
+    margin: 0;
+}
+
+

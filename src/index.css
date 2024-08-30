@@ -1,0 +1,121 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+:root{
+  --primary-color: #FAFAFA;
+  --secondary-color: #000;
+  --main-color: #DB4444;
+}
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color: var(--secondary-color);
+  transition: all 1s;
+}
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+a{
+  text-decoration: none;
+}
+ul{
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+input{
+  border: none !important;
+  border-bottom: 1px solid #ccc !important;
+}
+input[type="checkbox"], input[type="radio"] {
+  width: 1em;
+  height: 1rem;
+  accent-color: var(--main-color);
+}
+
+i{
+  font-size: 18px;
+}
+.cursor-pointer{
+  cursor: pointer;
+}
+
+/* Style the custom buttons in the first home slider*/
+ul.slick-dots li{
+  bottom: 40px !important;
+  background-color: var(--primary-color);
+  border-radius: 50%;
+  color: var(--main-color);
+  transition: all 1s;
+}
+ul.slick-dots li button{
+  color: var(--main-color);
+  transition: all 1s;
+}
+
+
+/* today's products slider at home*/
+.slick-slide {
+  transition: transform 0.5s ease;
+}
+.slick-list{
+  padding: 0 !important;
+  position: relative;
+}
+/* .slick-slider button::before{
+  content: ' ' !important;
+  background-color: slateblue;
+} */
+.slick-slider{
+  position: relative;
+}
+.slick-slider .slick-prev, .slick-slider .slick-next{
+  width: 20px;
+  height: 20px;
+  left: 97% !important;
+  right: 10px !important;
+  top: -40px;
+  color: red !important;
+  font-size: xx-large !important;
+  z-index: 9999;
+  padding: 30px;
+}
+.slick-slider .slick-prev{
+  left: 93% !important;
+  right: 50px !important;
+}
+.slick-prev:before, .slick-next:before {
+  font-size: 30px;
+  color: tomato;
+  opacity: 1;
+}
+
+.slick-dots{
+  bottom: -37%;
+}
+.slick-dots li{
+  width: 26px !important;
+  height: 26px !important;
+  margin-top: 40px 0 !important;
+}
+
+@media (min-width: 1280px) {
+  .container {
+      max-width: 1280px;
+  }
+}
+.collapse {
+  visibility: visible !important;
+}
+
+::selection{
+  background-color: var(--main-color);
+  color: var(--primary-color);
+}
